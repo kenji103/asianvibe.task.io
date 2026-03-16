@@ -1,0 +1,130 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+text-align:left;
+}
+
+.welcome {background-color: #def5ff;    }
+
+.Drinks {background-color: #dcfdf8;}
+nav {font-style: italic;}
+
+.Architecture {background-color: #fefbe4;}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.navigation.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {margin-right: 16px;}
+
+.nav-link {color: #e58a9a;
+transition: background-color 0.2s ease-in-out;}
+
+.nav-link:hover {background-color: #ee637c;}
+
+.nav-link_active {color: #fa5472;
+font-weight: bold;}
+
+.main {
+    display: flex;
+    align-items: stretch;
+}
+
+h1 {font-size: 48px;
+}
+
+.h1 {display: flex;
+    align-items: flex-start;
+    height: auto;}
+
+h4 {font-style: oblique;
+color: #fe0000;}
+
+.cover {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 16px;
+    height: 200px;
+    width: 100%;
+object-fit: cover;}
+
+span {background-color:#fcced6;
+font: size 16px;
+display: inline-block;
+width: auto;
+text-align: left;
+padding: 48px;
+margin-left: 16px;
+margin-bottom: 16px;
+}
+
+.tea {background-color: #9cffde;}
+.house {background-color: #ffe4a8;}
+
+footer {color: #8f8f8f;}
+
+.container {display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+margin-top: 24px;}
+
+
+/*Here is the style for the tile*/
+
+.cardArch {background-color: #ffe4a8;
+    border-radius: 2%;
+width: 600px;
+padding: 4px;
+padding-left: 12px;
+padding-right: 12px;
+display: flex;
+align-items: center;
+gap: 16px;
+margin-bottom: 16px;
+}
+
+.card-image {width: 150px;
+height: 100px;
+border-radius: 4%;
+object-fit: cover;}
+
+.title {font-size: 24px;
+font-style:bold;}
+
+.card-description {font-size: 16px;
+color: #000000;
+}
+
+.cardDrink {background-color: #9cffde;
+    border-radius: 2%;
+width: 600px;
+padding: 4px;
+padding-left: 12px;
+padding-right: 12px;
+display: flex;
+align-items: center;
+gap: 16px;
+margin-bottom: 16px;
+}
+
+.cardHome {background-color: #fcced6;
+    border-radius: 2%;
+width: 600px;
+padding: 4px;
+padding-left: 12px;
+padding-right: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
+margin-bottom: 16px;
+}
