@@ -1,14 +1,26 @@
-body {font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 text-align:left;
 }
 
-.welcome {background-color: #def5ff;    }
+.welcome {background-color: #def5ff;
+margin-top: -30;
+}
 
-.Drinks {background-color: #dcfdf8;}
+.Drinks {background-color: #dcfdf8;
+margin-top: -30;
+}
 nav {font-style: italic;}
 
-.Architecture {background-color: #fefbe4;}
+.Architecture {background-color: #fefbe4;
+margin-top: -30;
+}
+
+header { background-color: white;
+    position: sticky;
+    top: 0;
+}
 
 nav {
     display: flex;
@@ -72,9 +84,10 @@ margin-bottom: 16px;
 footer {color: #8f8f8f;}
 
 .container {display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
     flex-wrap: wrap;
+    gap: 24px;
 margin-top: 24px;}
 
 
@@ -82,23 +95,24 @@ margin-top: 24px;}
 
 .cardArch {background-color: #ffe4a8;
     border-radius: 2%;
-width: 600px;
+width: 408px;
 padding: 4px;
-padding-left: 12px;
-padding-right: 12px;
+padding: 12px;
 display: flex;
 align-items: center;
 gap: 16px;
-margin-bottom: 16px;
 }
 
-.card-image {width: 150px;
-height: 100px;
+.card-image {background-color: #fa5472;
+    width: 150px;
+height: 150px;
+display: flex;
+align-items: stretch;
 border-radius: 4%;
 object-fit: cover;}
 
-.title {font-size: 24px;
-font-style:bold;}
+.title {font-size: 18px;
+font-weight:bold;}
 
 .card-description {font-size: 16px;
 color: #000000;
@@ -106,25 +120,53 @@ color: #000000;
 
 .cardDrink {background-color: #9cffde;
     border-radius: 2%;
-width: 600px;
+width: 412px;
 padding: 4px;
-padding-left: 12px;
-padding-right: 12px;
+padding: 12px;
 display: flex;
 align-items: center;
 gap: 16px;
-margin-bottom: 16px;
 }
 
 .cardHome {background-color: #fcced6;
     border-radius: 2%;
-width: 600px;
-padding: 4px;
-padding-left: 12px;
-padding-right: 12px;
+width: 412px;
+padding: 12px;
 display: flex;
-justify-content: center;
 align-items: center;
 gap: 16px;
-margin-bottom: 16px;
+}
+
+/*ADDITION*/
+
+.h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.main-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+    border-top: 1px solid #8f8f8f;
+    border-bottom: 1px solid #8f8f8f;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-item {
+    display: grid;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: stretch;
+    border-radius: 0%;
+    object-fit: cover;
 }
