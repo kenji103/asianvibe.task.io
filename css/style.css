@@ -169,4 +169,12 @@ gap: 16px;
     align-items: stretch;
     border-radius: 0%;
     object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+    transition-duration: .3s;
+}
+
+.grid-item:hover {
+    border: solid 3px;
+    border-color: #fff4f4;
+    transform: scale(1.1);
 }
